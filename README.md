@@ -231,6 +231,15 @@ Examples:
 http://127.0.0.1:8000/student/1
 http://127.0.0.1:8000/student/2
 
+## Dashboard Screenshots
+
+### Teacher Dashboard
+
+![Teacher Dashboard](screenshots/teacher_dashboard.png)
+
+### Student Dashboard
+
+![Student Dashboard](screenshots/student_dashboard.png)
 ## Running the Project
 
 ### 1. Create Virtual Environment
