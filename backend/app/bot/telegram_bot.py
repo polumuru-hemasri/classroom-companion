@@ -16,7 +16,7 @@ BOT_TOKEN = "8664074250:AAGHI1C6S1cLxX5xH4nc7kiOCWo6-DqznHE"
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Hello! Classroom Companion Bot is running 🚀"
+        "Hello! Classroom Companion Bot is running "
     )
 
 
@@ -50,7 +50,7 @@ async def teacher(update: Update, context: ContextTypes.DEFAULT_TYPE):
     db.commit()
 
     await update.message.reply_text(
-        "Registered as Teacher successfully ✅"
+        "Registered as Teacher successfully "
     )
 async def student(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
@@ -82,7 +82,7 @@ async def student(update: Update, context: ContextTypes.DEFAULT_TYPE):
     db.commit()
 
     await update.message.reply_text(
-        "Registered as Student successfully ✅"
+        "Registered as Student successfully "
     )
 async def create_assignment(
     update: Update,
@@ -114,7 +114,7 @@ async def create_assignment(
     db.commit()
 
     await update.message.reply_text(
-        f"Assignment '{title}' created successfully ✅\n"
+        f"Assignment '{title}' created successfully \n"
         f"Deadline: {deadline}"
     )
 async def assign(
@@ -173,7 +173,7 @@ async def assign(
     db.commit()
 
     await update.message.reply_text(
-        "Assignment assigned successfully ✅"
+        "Assignment assigned successfully "
     )
 async def view_assignments(
     update: Update,
@@ -286,7 +286,7 @@ async def submit(
     db.commit()
 
     await update.message.reply_text(
-        "Assignment submitted successfully ✅"
+        "Assignment submitted successfully "
     )
 async def review(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
@@ -305,7 +305,7 @@ async def review(update: Update, context: ContextTypes.DEFAULT_TYPE):
     db.commit()
 
     await update.message.reply_text(
-        "Assignment reviewed successfully ✅"
+        "Assignment reviewed successfully "
     )    
 async def feedback(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
@@ -330,7 +330,7 @@ async def feedback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     db.commit()
 
     await update.message.reply_text(
-        "Feedback added successfully ✅"
+        "Feedback added successfully "
     )  
 async def view_feedback(
     update: Update,
@@ -435,7 +435,7 @@ async def remind(
 ):
 
     await update.message.reply_text(
-        "Reminder sent to students 🔔"
+        "Reminder sent to students "
     )  
 async def ask(
     update: Update,
@@ -525,7 +525,7 @@ async def ai_assign(
     db.commit()
 
     await update.message.reply_text(
-        f"✅ Assignment created and assigned\n\n"
+        f"Assignment created and assigned\n\n"
         f"Student: {student_name}\n"
         f"Assignment: {assignment_title}\n"
         f"Deadline: {deadline}"
@@ -590,7 +590,7 @@ async def progress(
 
     await update.message.reply_text(
         f"{result}\n\n"
-        f"Database updated ✅"
+        f"Database updated "
     )
 async def submit_content(
     update: Update,
@@ -653,7 +653,7 @@ async def submit_content(
     db.commit()
 
     await update.message.reply_text(
-        "Assignment content submitted successfully ✅"
+        "Assignment content submitted successfully"
     )
 async def ai_review(
     update: Update,
